@@ -1,0 +1,60 @@
+
+body {
+	background-color: #fafafa;
+	margin: 0;
+	padding: 0;
+	font-family: "Verdana", sans-serif;
+}
+.animation--plus {
+	font-size: 30px;
+}
+
+.task--name{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+.container-task:hover .animation--plus {
+	display: block;
+	transform: rotate(45deg);
+	transition: 1s;
+}
+
+.container-task:hover .task--img {
+	display: flex;
+	justify-content: center;
+	
+	
+}
+
+
+.container:hover .task--name .animation--plus {
+	display: block;
+}
+
+
+.radio {
+ 	display: none;
+}
+.animation--plus {
+	display: none;
+}
+.task--img {
+	display: none;
+	justify-content: center;
+}
+
+.img {
+	width: 400px;
+	border-radius: 20px;
+}
+
+.radio:checked  ~ .task--img{
+	display: flex;
+	
+};
+
