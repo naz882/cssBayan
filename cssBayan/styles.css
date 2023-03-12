@@ -1,0 +1,133 @@
+
+body {
+	background-color: #fafafa;
+	margin: 0;
+	padding: 0;
+	font-family: "Verdana", sans-serif;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.animation--plus {
+	font-size: 30px;
+}
+
+.task--name{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+
+}
+
+.container-task:hover .animation--plus {
+	display: block;
+	transform: rotate(45deg);
+	transition: 1s;
+}
+
+.container-task:hover .task--img {
+	display: flex;
+	opacity: 1;
+	height: 50vh;
+	width: 40vw;
+	justify-content: center;
+
+}
+
+
+.container:hover .task--name .animation--plus {
+	display: block;
+}
+
+
+.radio {
+ 	display: none;
+}
+.animation--plus {
+	display: none;
+}
+.task--img {
+	display: flex;
+	justify-content: center;
+	opacity: 0;
+	height: 0;
+	padding: 0 8px;
+	overflow: hidden;
+	transition: all .3s ease .15s;
+	
+}
+
+.img {
+	width: 40vw;
+	border-radius: 1rem;
+}
+
+.radio:checked  ~ .task--img{
+	display: flex;
+	opacity: 1;
+	height: 50vh;
+	
+	
+};
+
+@media (max-width: 788px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	h3 {
+		font-size: 1.2rem;
+	}
+
+	p {
+		font-size: 0.8rem;
+	}
+
+	.container {
+		width: 90%;
+	}
+}
+
+@media (min-width: 789px) and (max-width: 1888px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+
+	.container {
+		width: 60%;
+	}
+}
+
+@media (min-width: 1889px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	h3 {
+		font-size: 1.8rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+
+	.container {
+		width: 40%;
+	}
+}
