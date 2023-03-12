@@ -22,8 +22,8 @@ main {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 1rem;
+	padding-right: 1rem;
 
 }
 
@@ -58,8 +58,8 @@ main {
 }
 
 .img {
-	width: 400px;
-	border-radius: 20px;
+	width: 40vw;
+	border-radius: 1rem;
 }
 
 .radio:checked  ~ .task--img{
