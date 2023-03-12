@@ -35,14 +35,16 @@ main {
 
 .container-task:hover .task--img {
 	display: flex;
-	
+	opacity: 1;
+	height: 50vh;
+	width: 40vw;
+	justify-content: center;
 
 }
 
 
 .container:hover .task--name .animation--plus {
 	display: block;
-	
 }
 
 
@@ -53,8 +55,14 @@ main {
 	display: none;
 }
 .task--img {
-	display: none;
+	display: flex;
 	justify-content: center;
+	opacity: 0;
+	height: 0;
+	padding: 0 8px;
+	overflow: hidden;
+	transition: all .3s ease .15s;
+	
 }
 
 .img {
@@ -64,6 +72,8 @@ main {
 
 .radio:checked  ~ .task--img{
 	display: flex;
+	opacity: 1;
+	height: 50vh;
 	
 	
 };
@@ -73,7 +83,7 @@ main {
 		font-size: 1.5rem;
 	}
 
-	h2 {
+	h3 {
 		font-size: 1.2rem;
 	}
 
@@ -91,7 +101,7 @@ main {
 		font-size: 2rem;
 	}
 
-	h2 {
+	h3 {
 		font-size: 1.5rem;
 	}
 
@@ -109,7 +119,7 @@ main {
 		font-size: 2.5rem;
 	}
 
-	h2 {
+	h3 {
 		font-size: 1.8rem;
 	}
 
