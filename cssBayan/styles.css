@@ -5,6 +5,15 @@ body {
 	padding: 0;
 	font-family: "Verdana", sans-serif;
 }
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
 .animation--plus {
 	font-size: 30px;
 }
@@ -26,14 +35,14 @@ body {
 
 .container-task:hover .task--img {
 	display: flex;
-	justify-content: center;
 	
-	
+
 }
 
 
 .container:hover .task--name .animation--plus {
 	display: block;
+	
 }
 
 
@@ -56,5 +65,59 @@ body {
 .radio:checked  ~ .task--img{
 	display: flex;
 	
+	
 };
 
+@media (max-width: 788px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+	}
+
+	p {
+		font-size: 0.8rem;
+	}
+
+	.container {
+		width: 90%;
+	}
+}
+
+@media (min-width: 789px) and (max-width: 1888px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+
+	.container {
+		width: 60%;
+	}
+}
+
+@media (min-width: 1889px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+
+	.container {
+		width: 40%;
+	}
+}
